@@ -21,3 +21,33 @@ body {
     width: initial;
     background: $bg-color ;
 }
+
+::ng-deep .dx-card {
+    background: $body-color;
+    border: 1px solid #272A38;
+    box-sizing: border-box;
+    border-radius: 0px 0px 2px 2px;
+    margin: 4px;
+    height: 98%;
+
+}
+
+::ng-deep .dx-card-header {
+    background: $list-color;
+    padding: 5px 12px;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 40px;
+
+}
+
+
+::ng-deep .dx-card-header-text {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 16px;
+    color: $text-color-0;
+    display: flex;
+    align-items: center;
+}

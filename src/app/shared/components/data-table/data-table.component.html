@@ -1,0 +1,34 @@
+<div class="dx-card body">
+    <div class="dx-card-header">
+        <div class="dx-card-header-text">
+            Фильтруемые данные
+        </div>
+    </div>
+    <div id="body-container">
+        <dx-data-grid id="data-grid" [dataSource]="dataSource" [allowColumnReordering]="true"
+            [allowColumnResizing]="true" [showBorders]="true">
+            <dxo-filter-row [visible]="true"></dxo-filter-row>
+            <dxo-header-filter [visible]="true"></dxo-header-filter>
+
+            <dxi-column dataField="dateAccIn" caption="Дата отчета" dataType="date" format="d/M/yyyy" alignment="right"
+                [filterOperations]="false"
+                [allowHeaderFiltering]="false">
+            </dxi-column>
+            <dxi-column dataField="id" caption="ID отчета" dataType="number" alignment="right" [allowFiltering]="false">
+            </dxi-column>
+            <dxi-column dataField="currency.code" caption="Валюта" dataType="string" alignment="right"
+                [allowFiltering]="false"></dxi-column>
+            <dxi-column dataField="agent.code" caption="Агент" dataType="string" alignment="right"
+                [filterValues]="agentDataSource"
+                [filterOperations]="false"></dxi-column>
+            <dxi-column dataField="pointOfSale.code" caption="Точка продажи" dataType="string" alignment="right"
+                [filterOperations]="false">
+            </dxi-column>
+            <dxi-column dataField="dts.code" caption="Источник данных" dataType="string" alignment="right"
+                [filterOperations]="false" [allowHeaderFiltering]="false"></dxi-column>
+            <dxi-column dataField="storno" caption="Сторно" dataType="boolean" alignment="center"
+                [allowFiltering]="false"></dxi-column>
+        </dx-data-grid>
+    </div>
+
+</div>

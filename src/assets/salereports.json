@@ -1,0 +1,372 @@
+{
+	"count": 20,
+	"limit": 20,
+	"offset": 0,
+	"hasMore": true,
+	"items": [
+		{
+			"type": "saleReport",
+			"id": 1163816162,
+			"currency": {
+				"code": "РУБ",
+				"name": "Российский рубль"
+			},
+			"dateAccIn": "2022-01-02T00:00:00+03:00",
+			"pkind": 0,
+			"agent": {
+				"code": "02МИР",
+				"name": "АО АК АЛРОСА"
+			},
+			"pointOfSale": {
+				"code": "ЯМ678170",
+				"name": "ЯМ678170"
+			},
+			"attrClose": 0,
+			"dts": {
+				"code": "SIR_2000",
+				"name": "SIR_2000"
+			},
+			"userId": 1,
+			"datInp": "2022-01-01T06:06:55+03:00",
+			"storno": 1
+		},
+		{
+			"type": "saleReport",
+			"id": 1163816162,
+			"currency": {
+				"code": "РУБ",
+				"name": "Российский рубль"
+			},
+			"dateAccIn": "2022-01-01T00:00:00+03:00",
+			"pkind": 0,
+			"agent": {
+				"code": "02МИР",
+				"name": "АО АК АЛРОСА"
+			},
+			"pointOfSale": {
+				"code": "ЯМ678170",
+				"name": "ЯМ678170"
+			},
+			"attrClose": 0,
+			"dts": {
+				"code": "SIR_2000",
+				"name": "SIR_2000"
+			},
+			"userId": 1,
+			"datInp": "2022-01-01T06:06:55+03:00",
+			"storno": 0
+		},
+		{
+			"type": "saleReport",
+			"id": 1163816162,
+			"currency": {
+				"code": "РУБ",
+				"name": "Российский рубль"
+			},
+			"dateAccIn": "2022-01-01T00:00:00+03:00",
+			"pkind": 0,
+			"agent": {
+				"code": "БИЛЕТДВ",
+				"name": "ООО 'БИЛЕТДВ'"
+			},
+			"pointOfSale": {
+				"code": "ЯМ678170",
+				"name": "ЯМ678170"
+			},
+			"attrClose": 0,
+			"dts": {
+				"code": "SIR_2000",
+				"name": "SIR_2000"
+			},
+			"userId": 1,
+			"datInp": "2022-01-01T06:06:55+03:00",
+			"storno": 0
+		},
+		{
+			"type": "saleReport",
+			"id": 1163816162,
+			"currency": {
+				"code": "РУБ",
+				"name": "Российский рубль"
+			},
+			"dateAccIn": "2022-01-01T00:00:00+03:00",
+			"pkind": 0,
+			"agent": {
+				"code": "БИЛЕТДВ",
+				"name": "ООО 'БИЛЕТДВ'"
+			},
+			"pointOfSale": {
+				"code": "ЛЕНИНА",
+				"name": "ЛЕНИНА"
+			},
+			"attrClose": 0,
+			"dts": {
+				"code": "EMM",
+				"name": "EMM"
+			},
+			"userId": 1,
+			"datInp": "2022-01-01T06:06:55+03:00",
+			"storno": 0
+		},
+		{
+			"type": "saleReport",
+			"id": 1163816162,
+			"currency": {
+				"code": "РУБ",
+				"name": "Российский рубль"
+			},
+			"dateAccIn": "2022-01-01T00:00:00+03:00",
+			"pkind": 0,
+			"agent": {
+				"code": "02МИР",
+				"name": "АО АК АЛРОСА"
+			},
+			"pointOfSale": {
+				"code": "ЯМ678170",
+				"name": "ЯМ678170"
+			},
+			"attrClose": 0,
+			"dts": {
+				"code": "SIR_2000",
+				"name": "SIR_2000"
+			},
+			"userId": 1,
+			"datInp": "2022-01-02T06:06:55+03:00",
+			"storno": 0
+		},
+		{
+			"type": "saleReport",
+			"id": 1163816162,
+			"currency": {
+				"code": "РУБ",
+				"name": "Российский рубль"
+			},
+			"dateAccIn": "2022-01-01T00:00:00+03:00",
+			"pkind": 0,
+			"agent": {
+				"code": "02МИР",
+				"name": "АО АК АЛРОСА"
+			},
+			"pointOfSale": {
+				"code": "ЯМ678170",
+				"name": "ЯМ678170"
+			},
+			"attrClose": 0,
+			"dts": {
+				"code": "SIR_2000",
+				"name": "SIR_2000"
+			},
+			"userId": 1,
+			"datInp": "2022-01-03T06:06:55+03:00",
+			"storno": 0
+		},
+		{
+			"type": "saleReport",
+			"id": 1163816162,
+			"currency": {
+				"code": "РУБ",
+				"name": "Российский рубль"
+			},
+			"dateAccIn": "2022-01-01T00:00:00+03:00",
+			"pkind": 0,
+			"agent": {
+				"code": "02МИР",
+				"name": "АО АК АЛРОСА"
+			},
+			"pointOfSale": {
+				"code": "ЛЕНИНА",
+				"name": "ЛЕНИНА"
+			},
+			"attrClose": 0,
+			"dts": {
+				"code": "SIR_2000",
+				"name": "SIR_2000"
+			},
+			"userId": 1,
+			"datInp": "2022-01-01T06:06:55+03:00",
+			"storno": 0
+		},
+		{
+			"type": "saleReport",
+			"id": 1163816162,
+			"currency": {
+				"code": "РУБ",
+				"name": "Российский рубль"
+			},
+			"dateAccIn": "2022-01-01T00:00:00+03:00",
+			"pkind": 0,
+			"agent": {
+				"code": "БИЛЕТДВ",
+				"name": "ООО 'БИЛЕТДВ'"
+			},
+			"pointOfSale": {
+				"code": "ЯМ678170",
+				"name": "ЯМ678170"
+			},
+			"attrClose": 0,
+			"dts": {
+				"code": "EMM",
+				"name": "EMM"
+			},
+			"userId": 1,
+			"datInp": "2022-01-01T06:06:55+03:00",
+			"storno": 0
+		},
+		{
+			"type": "saleReport",
+			"id": 1163816162,
+			"currency": {
+				"code": "РУБ",
+				"name": "Российский рубль"
+			},
+			"dateAccIn": "2022-01-01T00:00:00+03:00",
+			"pkind": 0,
+			"agent": {
+				"code": "02МИР",
+				"name": "АО АК АЛРОСА"
+			},
+			"pointOfSale": {
+				"code": "ЯМ678170",
+				"name": "ЯМ678170"
+			},
+			"attrClose": 0,
+			"dts": {
+				"code": "SIR_2000",
+				"name": "SIR_2000"
+			},
+			"userId": 1,
+			"datInp": "2022-01-02T06:06:55+03:00",
+			"storno": 0
+		},
+		{
+			"type": "saleReport",
+			"id": 1163816162,
+			"currency": {
+				"code": "РУБ",
+				"name": "Российский рубль"
+			},
+			"dateAccIn": "2022-01-01T00:00:00+03:00",
+			"pkind": 0,
+			"agent": {
+				"code": "02МИР",
+				"name": "АО АК АЛРОСА"
+			},
+			"pointOfSale": {
+				"code": "ЯМ678170",
+				"name": "ЯМ678170"
+			},
+			"attrClose": 0,
+			"dts": {
+				"code": "SIR_2000",
+				"name": "SIR_2000"
+			},
+			"userId": 1,
+			"datInp": "2022-01-01T06:06:55+03:00",
+			"storno": 0
+		},
+		{
+			"type": "saleReport",
+			"id": 1163816162,
+			"currency": {
+				"code": "РУБ",
+				"name": "Российский рубль"
+			},
+			"dateAccIn": "2022-01-01T00:00:00+03:00",
+			"pkind": 0,
+			"agent": {
+				"code": "22МОА",
+				"name": "АО АК 22МОА"
+			},
+			"pointOfSale": {
+				"code": "ЛЕНИНА",
+				"name": "ЛЕНИНА"
+			},
+			"attrClose": 0,
+			"dts": {
+				"code": "INP",
+				"name": "Ручной ввод"
+			},
+			"userId": 1,
+			"datInp": "2022-01-17T06:06:55+03:00",
+			"storno": 0
+		},
+		{
+			"type": "saleReport",
+			"id": 1163816162,
+			"currency": {
+				"code": "РУБ",
+				"name": "Российский рубль"
+			},
+			"dateAccIn": "2022-01-01T00:00:00+03:00",
+			"pkind": 0,
+			"agent": {
+				"code": "22МОА",
+				"name": "АО АК 22МОА"
+			},
+			"pointOfSale": {
+				"code": "ЯМ678170",
+				"name": "ЯМ678170"
+			},
+			"attrClose": 0,
+			"dts": {
+				"code": "INP",
+				"name": "Ручной ввод"
+			},
+			"userId": 1,
+			"datInp": "2022-01-01T06:06:55+03:00",
+			"storno": 0
+		},
+		{
+			"type": "saleReport",
+			"id": 1163816162,
+			"currency": {
+				"code": "РУБ",
+				"name": "Российский рубль"
+			},
+			"dateAccIn": "2022-01-01T00:00:00+03:00",
+			"pkind": 0,
+			"agent": {
+				"code": "АВС_КОАО",
+				"name": "АВС калининградского ОАО "
+			},
+			"pointOfSale": {
+				"code": "Краснодар",
+				"name": "Краснодар"
+			},
+			"attrClose": 0,
+			"dts": {
+				"code": "INP",
+				"name": "Ручной ввод"
+			},
+			"userId": 1,
+			"datInp": "2022-01-05T06:06:55+03:00",
+			"storno": 0
+		},
+		{
+			"type": "saleReport",
+			"id": 1163816162,
+			"currency": {
+				"code": "РУБ",
+				"name": "Российский рубль"
+			},
+			"dateAccIn": "2022-01-01T00:00:00+03:00",
+			"pkind": 0,
+			"agent": {
+				"code": "АВС_КОАО",
+				"name": "АВС калининградского ОАО "
+			},
+			"pointOfSale": {
+				"code": "ЯМ678170",
+				"name": "ЯМ678170"
+			},
+			"attrClose": 0,
+			"dts": {
+				"code": "SIR_2000",
+				"name": "SIR_2000"
+			},
+			"userId": 1,
+			"datInp": "2022-01-01T06:06:55+03:00",
+			"storno": 0
+		}
+	]
+}
