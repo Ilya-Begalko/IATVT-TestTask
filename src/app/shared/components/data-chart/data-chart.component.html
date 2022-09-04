@@ -1,0 +1,53 @@
+<div class="dx-card body">
+  <div class="dx-card-header">
+    <div class="dx-card-header-text">
+      Отчеты за день
+    </div>
+    <div class="right-tab">
+      <dx-button  class="button" style="margin-left: 5px;" (onClick)="openDatePicker()"> Выбор даты
+      </dx-button>
+    </div>
+  </div>
+
+  <div id="body-container" class="body-list">
+    <div class="title-no-data" *ngIf="visTitleNoData">
+      <p>No data to display</p>
+    </div>
+    <dx-scroll-view class="full-height-scrollable" *ngIf="visTitleNoData">
+      <div echarts [options]="options" class="demo-chart"></div>
+    </dx-scroll-view>
+  </div>
+</div>
+<dx-popup title="Настройка виджета" [(visible)]="visDatePicker" [shading]='false' [resizeEnabled]='true' [width]="300"
+[showCloseButton]="true" [height]="250">
+Выбор периода:
+<div class="tab-timepicker">
+  <div class="option">
+    Дата начала отрезка
+    <dx-date-box #selectedStartDate width="100%"></dx-date-box>
+  </div>
+  <div class="option">
+    Дата конца отрезка
+    <dx-date-box #selectedEndDate width="100%"></dx-date-box>
+  </div>
+</div>
+<dx-button class="button" style="margin-left: 5px;" (onClick)="activeDatePicker(selectedStartDate.value, selectedEndDate.value)">Применить</dx-button>
+
+</dx-popup>
+
+
+<!-- <dx-popup title="Настройка виджета" [(visible)]="visDatePicker" [shading]='false' [resizeEnabled]='true' [width]="300"
+  [showCloseButton]="true" [height]="200">
+  Выбор периода:
+  <div class="tab-timepicker">
+    <mat-form-field appearance="fill">
+      <label>
+        <input matInput [matDatepicker]="picker" (dateInput)="addEvent($event)" > 
+     [formControl]="date" 
+      </label>
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+  </div>
+</dx-popup> -->
