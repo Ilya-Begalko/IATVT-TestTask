@@ -28,7 +28,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/devextreme/dist/css/dx.common.css",
+              "node_modules/devextreme/dist/css/dx.material.blue.dark.compact.css",
+              "src/assets/dx-styles.scss"
             ],
             "scripts": []
           },
@@ -96,7 +99,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/devextreme/dist/css/dx.common.css",
+              "node_modules/devextreme/dist/css/dx.material.blue.dark.compact.css",
+              "src/assets/dx-styles.scss"
             ],
             "scripts": []
           }

@@ -1,0 +1,23 @@
+@import "../styles.scss";
+
+body {
+    background: $bg-color;
+    display: flex;
+    flex-direction: column;
+}
+
+::ng-deep * {
+    margin: 0;
+    padding: 0;
+
+}
+
+.header {
+    height: 6vh;
+    width: 100%;
+}
+
+.tab-page {
+    width: initial;
+    background: $bg-color ;
+}

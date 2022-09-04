@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="left-tab">
+        <h1 class="left-tab__title">
+            {{titlePage}}
+        </h1>
+    </div>
+    <div class="menu">
+        <div class="menu__title">
+            <a routerLink="/" routerLinkActive="active-link" (click)="changeTitle('home')">Экран отображения данных</a>
+        </div>
+        <div class="menu__title">
+            <a routerLink="/chart" routerLinkActive="active-link" (click)="changeTitle('chart')">Экран отчета</a>
+        </div>
+    </div>
+</div>
