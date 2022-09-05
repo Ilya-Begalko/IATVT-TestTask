@@ -9,7 +9,8 @@ export class MainHeaderComponent implements OnInit {
   titlePage: string = 'Экран отображения данных ';
 
   constructor() {}
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
 
   changeTitle(title: string) {
     if (title === 'chart') {
