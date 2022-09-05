@@ -12,7 +12,13 @@ export class ChartService {
   };
 
   createSeries(data: any[]) {
+    this.result = {
+      arg: [],
+      val: [],
+    };
+    
     let elArr = data.map((x) => moment(x.dateAccIn).format('DD-MM-yyyy'));
+    elArr = elArr.sort()
 
     let numOfEl: any = {};
     elArr.forEach(function (a) {
@@ -34,7 +40,8 @@ export class ChartService {
     };
 
     let elArr = data.map((x) => moment(x.dateAccIn).format('DD-MM-yyyy'));
-
+    elArr = elArr.sort()
+    
     let numOfEl: any = {};
     elArr.forEach(function (a) {
       numOfEl[a] = numOfEl[a] + 1 || 1;

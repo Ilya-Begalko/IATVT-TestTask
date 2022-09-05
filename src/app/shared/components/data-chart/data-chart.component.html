@@ -4,17 +4,14 @@
       Отчеты за день
     </div>
     <div class="right-tab">
-      <dx-button  class="button" style="margin-left: 5px;" (onClick)="openDatePicker()"> Выбор даты
+      <dx-button   class="button" style="margin-left: 5px;" (onClick)="openDatePicker()"> Выбор даты
       </dx-button>
     </div>
   </div>
 
   <div id="body-container" class="body-list">
-    <div class="title-no-data" *ngIf="visTitleNoData">
-      <p>No data to display</p>
-    </div>
-    <dx-scroll-view class="full-height-scrollable" *ngIf="visTitleNoData">
-      <div echarts [options]="options" class="demo-chart"></div>
+    <dx-scroll-view class="full-height-scrollable">
+      <div echarts #main [options]="options" class="demo-chart"></div>
     </dx-scroll-view>
   </div>
 </div>
