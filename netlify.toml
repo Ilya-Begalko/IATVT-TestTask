@@ -1,0 +1,8 @@
+[build.environment]
+  NODE_VERSION = "22"
+
+# Клиентские маршруты Angular (/chart) должны открывать index.html.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
