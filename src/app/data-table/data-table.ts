@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/core';
 import { DxDataGridModule } from 'devextreme-angular';
 import { SaleReports } from '../sale-reports';
 
@@ -12,6 +12,12 @@ import { SaleReports } from '../sale-reports';
 export class DataTable {
   private readonly saleReports = inject(SaleReports);
 
-  protected readonly reports = this.saleReports.reports;
+  protected readonly reports = computed(() =>
+    this.saleReports.reports().map((report) => ({
+      ...report,
+      dateAccIn: new Date(report.dateAccIn),
+    })),
+  );
+
   protected readonly agentCodes = this.saleReports.agentCodes;
 }
