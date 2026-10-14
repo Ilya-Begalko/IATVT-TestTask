@@ -1,27 +1,51 @@
-# IATVT
+# Тестовое задание для ИАТВТ
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.3.
+Веб-приложение для просмотра отчётов о продажах. Данные лежат в локальных JSON-файлах и загружаются при открытии экрана. Вёрстка подстраивается под ширину окна: шапка переносится, таблица прокручивается по горизонтали, график и окно периода не вылезают за край экрана.
 
-## Development server
+## Что реализовано
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Два экрана с переключением в шапке. Заголовок шапки меняется вместе с маршрутом.
 
-## Code scaffolding
+### Экран отображения данных
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Таблица отчётов на DevExtreme DataGrid:
 
-## Build
+- дата отчёта, ID, валюта, агент, точка продажи, источник данных и признак сторно;
+- перестановка и изменение ширины колонок;
+- строка фильтра и фильтр в заголовке там, где он включён;
+- список агентов для фильтра колонки «Агент» берётся из отдельного справочника;
+- в наборе 285 отчётов за январь 2022 года, таблица листается страницами.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Экран отчёта
 
-## Running unit tests
+Линейный график числа отчётов по календарным дням (ECharts):
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- каждая точка — количество отчётов за день, по дням января значения сильно различаются, поэтому линия скачет;
+- кнопка «Выбор даты» открывает окно периода;
+- после «Применить» график показывает только дни внутри выбранного интервала, включая границы;
+- если даты не заданы, приложение сообщает об этом и график не меняется.
 
-## Running end-to-end tests
+## Стек
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- Angular 22: standalone-компоненты, сигналы, `httpResource`, ленивая загрузка маршрутов, zoneless change detection
+- DevExtreme 26.1 — таблица, кнопка, всплывающее окно и выбор даты
+- ECharts 6 и ngx-echarts — график
+- Vitest — модульные тесты
 
-## Further help
+## Запуск
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Нужен Node.js 22.22 или новее.
+
+```bash
+npm install
+npm start
+```
+
+Приложение откроется на [http://localhost:4200/](http://localhost:4200/).
+
+```bash
+npm run build   # сборка в dist/iatvt
+npm test        # тесты
+```
+
+DevExtreme 26 показывает баннер оценки, пока в проект не подключён лицензионный ключ.

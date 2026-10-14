@@ -1,0 +1,31 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-height: 0;
+  min-width: 0;
+}
+
+.body-list {
+  width: 100%;
+  min-height: 0;
+}
+
+.option {
+  padding: 10px 0;
+}
+
+.button {
+  margin-left: 5px;
+}
+
+.demo-chart {
+  width: 100%;
+  height: max(280px, calc(100dvh - 240px));
+}
+
+@media (max-width: 640px) {
+  .button {
+    margin-left: 0;
+  }
+}

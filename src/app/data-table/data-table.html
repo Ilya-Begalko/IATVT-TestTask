@@ -1,0 +1,101 @@
+<div class="dx-card body">
+  <div class="dx-card-header">
+    <div class="dx-card-header-text">Фильтруемые данные</div>
+  </div>
+  <div id="body-container">
+    <dx-data-grid
+      id="data-grid"
+      [dataSource]="reports()"
+      [allowColumnReordering]="true"
+      [allowColumnResizing]="true"
+      [showBorders]="true"
+      [columnAutoWidth]="false"
+    >
+      <dxo-filter-row [visible]="true"></dxo-filter-row>
+      <dxo-header-filter [visible]="true"></dxo-header-filter>
+      <dxo-paging [pageSize]="25"></dxo-paging>
+      <dxo-pager
+        [visible]="true"
+        [showInfo]="true"
+        [showNavigationButtons]="true"
+        [showPageSizeSelector]="true"
+        [allowedPageSizes]="[15, 25, 50]"
+      ></dxo-pager>
+      <dxo-scrolling
+        mode="standard"
+        [useNative]="false"
+        showScrollbar="always"
+        [scrollByContent]="true"
+        [scrollByThumb]="true"
+      ></dxo-scrolling>
+
+      <dxi-column
+        dataField="dateAccIn"
+        caption="Дата отчета"
+        dataType="date"
+        format="d/M/yyyy"
+        alignment="right"
+        [minWidth]="160"
+        [filterOperations]="false"
+        [allowHeaderFiltering]="false"
+      >
+      </dxi-column>
+      <dxi-column
+        dataField="id"
+        caption="ID отчета"
+        dataType="number"
+        alignment="right"
+        [minWidth]="150"
+        [allowFiltering]="false"
+      >
+      </dxi-column>
+      <dxi-column
+        dataField="currency.code"
+        caption="Валюта"
+        dataType="string"
+        alignment="right"
+        [minWidth]="130"
+        [allowFiltering]="false"
+      >
+      </dxi-column>
+      <dxi-column
+        dataField="agent.code"
+        caption="Агент"
+        dataType="string"
+        alignment="right"
+        [minWidth]="160"
+        [filterValues]="agentCodes()"
+        [filterOperations]="false"
+      >
+      </dxi-column>
+      <dxi-column
+        dataField="pointOfSale.code"
+        caption="Точка продажи"
+        dataType="string"
+        alignment="right"
+        [minWidth]="190"
+        [filterOperations]="false"
+      >
+      </dxi-column>
+      <dxi-column
+        dataField="dts.code"
+        caption="Источник данных"
+        dataType="string"
+        alignment="right"
+        [minWidth]="200"
+        [filterOperations]="false"
+        [allowHeaderFiltering]="false"
+      >
+      </dxi-column>
+      <dxi-column
+        dataField="storno"
+        caption="Сторно"
+        dataType="boolean"
+        alignment="center"
+        [minWidth]="120"
+        [allowFiltering]="false"
+      >
+      </dxi-column>
+    </dx-data-grid>
+  </div>
+</div>

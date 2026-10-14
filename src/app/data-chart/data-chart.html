@@ -1,0 +1,41 @@
+<div class="dx-card body">
+  <div class="dx-card-header">
+    <div class="dx-card-header-text">Отчеты за день</div>
+    <div class="right-tab">
+      <dx-button class="button" (onClick)="openDatePicker()">Выбор даты</dx-button>
+    </div>
+  </div>
+
+  <div id="body-container" class="body-list">
+    <dx-scroll-view class="full-height-scrollable">
+      <div echarts class="demo-chart" [options]="options()" [loading]="loading()"></div>
+    </dx-scroll-view>
+  </div>
+</div>
+
+<dx-popup
+  title="Настройка виджета"
+  [visible]="pickerOpen()"
+  (visibleChange)="pickerOpen.set($event)"
+  [shading]="false"
+  [resizeEnabled]="true"
+  width="92vw"
+  [maxWidth]="400"
+  [showCloseButton]="true"
+  height="auto"
+>
+  Выбор периода:
+  <div class="tab-timepicker">
+    <div class="option">
+      Дата начала отрезка
+      <dx-date-box #selectedStartDate width="100%"></dx-date-box>
+    </div>
+    <div class="option">
+      Дата конца отрезка
+      <dx-date-box #selectedEndDate width="100%"></dx-date-box>
+    </div>
+  </div>
+  <dx-button class="button" (onClick)="applyRange(selectedStartDate.value, selectedEndDate.value)">
+    Применить
+  </dx-button>
+</dx-popup>

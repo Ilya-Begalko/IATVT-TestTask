@@ -1,0 +1,14 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-height: 0;
+  min-width: 0;
+}
+
+#data-grid {
+  width: 100%;
+  max-width: 100%;
+  height: max(360px, calc(100dvh - 250px));
+  min-width: 0;
+}
